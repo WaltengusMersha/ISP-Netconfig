@@ -1,0 +1,8 @@
+
+config ter
+hostname PERIMETER-FW
+enable password cisco
+username cisco password cisco
+do wr
+end
+

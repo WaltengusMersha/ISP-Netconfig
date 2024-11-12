@@ -1,0 +1,6 @@
+ip routing 
+router ospf 35
+router-id 1.1.4.4
+network 197.200.100.0 0.0.0.255 area 0
+network 20.20.20.0 0.0.0.3 area 0
+do wr

@@ -1,0 +1,12 @@
+interface range f0/1-2
+channel-group 3 mode active
+ex
+interface port-channel 3
+switchport mode trunk
+
+
+interface range f0/3-24
+spanning-tree portfast
+spanning-tree bpduguard enable
+do wr
+

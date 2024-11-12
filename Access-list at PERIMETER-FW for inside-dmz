@@ -1,0 +1,11 @@
+access-list INSIDE-DMZ permit icmp any any
+access-list INSIDE-DMZ permit udp any any 67
+access-list INSIDE-DMZ permit udp any any 68
+access-list INSIDE-DMZ permit udp any any 53
+access-list INSIDE-DMZ permit tcp any any 53
+access-list INSIDE-DMZ permit tcp any any 80
+access-list INSIDE-DMZ permit tcp any any 8080
+access-list INSIDE-DMZ permit tcp any any 443
+access-list INSIDE-DMZ permit tcp any any 8443
+
+access-group INSIDE-DMZ in interface DMZ

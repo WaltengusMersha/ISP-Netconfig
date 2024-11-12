@@ -1,0 +1,16 @@
+enable 
+config ter
+hostname AZURE-SW
+enable password cisco
+banner motd * NO ACCESS THIS DEVICE BY UNAUTHORIZE USER!!! *
+username cisco password cisco
+ip domain-name cisco.com
+no ip domain-lookup 
+service password-encryption 
+line console 0
+password cisco
+login
+exit
+do wr
+end
+

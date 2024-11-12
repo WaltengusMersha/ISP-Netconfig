@@ -1,0 +1,28 @@
+vlan 50
+name LAN
+vlan 60
+name WLAN
+vlan 101
+name VOIP
+
+interface range f0/3-11
+switchport mode access
+switchport access vlan 50
+switchport voice vlan 101
+
+interface range f0/12
+switchport mode access
+switchport access vlan 60
+
+
+interface range f0/13-23
+switchport mode access
+switchport access vlan 50
+switchport voice vlan 101
+
+interface range f0/24
+switchport mode access
+switchport access vlan 60
+
+do wr
+ex

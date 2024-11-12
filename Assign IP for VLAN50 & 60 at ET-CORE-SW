@@ -1,0 +1,9 @@
+interface vlan 50
+ip helper-address 10.10.10.5
+ip address 192.168.10.1 255.255.255.0
+no sh
+
+interface vlan 60
+ip helper-address 10.10.10.5
+ip address 10.20.0.1 255.255.0.0
+no sh

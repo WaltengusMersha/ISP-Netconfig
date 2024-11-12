@@ -1,0 +1,16 @@
+enable 
+config ter
+hostname ETHIOTELECOM-R
+enable password cisco
+banner motd * NO ACCESS THIS DEVICE BY UNAUTHORIZE USER!!! *
+username cisco password cisco
+ip domain-name cisco.com
+service password-encryption 
+no ip domain-lookup 
+line console 0
+password cisco
+login
+exit
+do wr
+end
+

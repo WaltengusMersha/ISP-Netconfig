@@ -1,0 +1,13 @@
+object network INSIDE-OUT1
+subnet 192.168.10.0 255.255.255.0
+nat (INSIDE,OUTSIDE) dynamic interface
+ex
+object network INSIDE-OUT2
+subnet 10.20.0.0 255.255.0.0
+nat (INSIDE,OUTSIDE) dynamic interface
+ex
+object network INSIDE-OUT3
+subnet 10.10.10.0 255.255.255.240
+nat (DMZ,OUTSIDE) dynamic interface
+ex
+
