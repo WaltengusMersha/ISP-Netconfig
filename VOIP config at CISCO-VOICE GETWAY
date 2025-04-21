@@ -13,21 +13,5 @@ service dhcp
  option 150 ip 172.16.10.1
  ex
 
-telephony-service
- max-ephones 10
- max-dn 10
- ip source-address 172.16.10.1 port 2000
- auto assign 1 to 10
 
-ephone-dn 1
- number 1001
-ephone-dn 2
- number 1002
-ephone-dn 3
- number 1003
-ephone-dn 4
- number 1005
-ephone-dn 5
- number 1005
-ephone-dn 6
- number 1006
+
